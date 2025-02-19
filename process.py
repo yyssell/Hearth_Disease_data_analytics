@@ -17,6 +17,8 @@ except Exception as e:
     print(f"Ошибка загрузки данных: {e}")
     exit()
 
+
+
 # ----------------- 2. Предобработка данных -----------------
 # Выбор значимых признаков
 significant_features = [
@@ -46,6 +48,8 @@ for i, col in enumerate(numerical_cols, 1):
     plt.title(f"{col}\nНормальное распред: {'Да' if p > 0.05 else 'Нет'}", fontsize=10)
 plt.tight_layout()
 plt.show()
+
+
 
 # ----------------- 4. Корреляционный анализ -----------------
 corr_matrix = processed_data[numerical_cols].corr()
