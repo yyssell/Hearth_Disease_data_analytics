@@ -1,5 +1,7 @@
 import pandas as pd
 
+
+
 attribute_descriptions = {
     'Age': {
         'Расшифровка': 'Возраст пациента',
@@ -64,6 +66,8 @@ attribute_descriptions = {
         'Назначение': 'Целевая переменная для классификации'
     }
 }
+
+
 
 # Преобразование в DataFrame для наглядного отображения
 desc_df = pd.DataFrame(attribute_descriptions).T.reset_index().rename(columns={'index':'Атрибут'})
